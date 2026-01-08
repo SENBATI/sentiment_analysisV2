@@ -49,8 +49,12 @@ Cette vue montre le flux de données en temps réel. On observe les volumes de p
 
 Lorsqu'une marque (ex: Maroc Telecom) subit une vague de commentaires négatifs, le système déclenche une alerte visuelle rouge et notifie l'opérateur en moins de 5 secondes.
 
-> *chute de la réputation: courbe en rouge "orange maroc"*
+> *chute de la réputation: courbe en rouge "orange maroc":*
 ![chute de réputation](image.png)
+
+Dashboard en sa totalité:
+
+![dashboard](image-1.png)
 
 ### 3. Preuve de Stockage (Cassandra)
 
