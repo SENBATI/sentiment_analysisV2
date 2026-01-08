@@ -1,4 +1,4 @@
-# 🛡️ Social Sentinel: Analyse de Sentiment en Temps Réel
+# Social Sentinel: Analyse de Sentiment en Temps Réel
 
 - **Module:** Clusters Big Data & Systèmes Distribués
 - **Année:** 2025/2026
@@ -6,7 +6,7 @@
 
 ---
 
-## 📖 Description du Projet
+## Description du Projet
 
 Ce projet implémente une architecture Big Data complète ("Kappa Architecture") pour surveiller la e-réputation des grandes entreprises marocaines (Maroc Telecom, Orange, RAM, etc.).
 
@@ -21,7 +21,7 @@ Le système ingère des flux de réseaux sociaux en temps réel, analyse le sent
 
 ---
 
-## 🏗️ Architecture Technique
+## Architecture Technique
 
 Le pipeline de données suit le flux suivant :
 
@@ -124,7 +124,7 @@ Le dashboard s'ouvrira automatiquement dans votre navigateur (http://localhost:8
 
 ---
 
-## 📂 Structure du Projet
+## Structure du Projet
 
 ```
 sentiment-analysis/
@@ -145,7 +145,7 @@ sentiment-analysis/
 
 ---
 
-## 🛠️ Difficultés Rencontrées & Solutions
+## Difficultés Rencontrées & Solutions
 
 | Problème | Solution |
 |----------|----------|
