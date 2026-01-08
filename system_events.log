@@ -570,3 +570,13 @@
 2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
 2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
 2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 14:26:55 | WARNING | Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2026-01-08 14:26:55 | WARNING | Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. https://docs.datastax.com/en/developer/python-driver/latest/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2026-01-08 14:26:55 | WARNING | Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. https://docs.datastax.com/en/developer/python-driver/latest/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2026-01-08 14:26:55 | INFO | Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2026-01-08 14:26:55 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 14:26:55 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 14:26:55 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 14:26:58 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 14:26:58 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 14:26:58 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
