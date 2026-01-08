@@ -1,154 +1,184 @@
-# Social Sentinel: Analyse de Sentiment en Temps Réel
+# Social Sentinel: Real-Time Sentiment Analysis
 
-- **Module:** Clusters Big Data & Systèmes Distribués
-- **Année:** 2025/2026
-- **Auteur:** [Votre Nom]
-
----
-
-## Description du Projet
-
-Ce projet implémente une architecture Big Data complète ("Kappa Architecture") pour surveiller la e-réputation des grandes entreprises marocaines (Maroc Telecom, Orange, RAM, etc.).
-
-Le système ingère des flux de réseaux sociaux en temps réel, analyse le sentiment des messages (Positif/Négatif/Neutre) grâce au NLP, et déclenche des alertes immédiates en cas de crise (ex: chute brutale de satisfaction due à une panne réseau).
-
-### Objectifs atteints :
-
-- **Ingestion Haute Fréquence:** Supporte des pics de charge (mode "Burst")
-- **Faible Latence:** Détection de crise en < 10 secondes
-- **Visualisation:** Dashboard interactif Web (Streamlit)
-- **Stockage:** Historisation complète et agrégations temporelles
+- **Module:** Big Data Clusters & Distributed Systems
+- **Year:** 2025/2026
+- **Project Type:** Big Data Architecture with Kafka, Spark & Cassandra
 
 ---
 
-## Architecture Technique
+## Project Overview
 
-Le pipeline de données suit le flux suivant :
+Social Sentinel is a complete Big Data architecture implementation (Kappa Architecture) for monitoring brand reputation and public sentiment across major Moroccan companies including Maroc Telecom, Orange, RAM, and others.
 
-1. **Générateur (Python):** Simule un flux de réseaux sociaux réaliste avec des scénarios de crise pondérés
-2. **Ingestion (Apache Kafka):** Tamponne les messages dans le topic `social_posts` (3 partitions)
-3. **Traitement (Apache Spark Streaming):**
-   - Consommation des micro-batchs
-   - Nettoyage et Analyse de Sentiment (TextBlob)
-   - Agrégation par fenêtres glissantes (Windowing 1 min)
-4. **Stockage (Apache Cassandra):** Sauvegarde des tweets bruts et des métriques agrégées
-5. **Visualisation (Streamlit + Plotly):** Interface de monitoring temps réel avec système d'alerte
+The system ingests real-time social media feeds, analyzes message sentiment (Positive/Negative/Neutral) using NLP, and triggers immediate alerts during crises (e.g., sudden satisfaction drops due to network outages or service issues).
 
----
+### Key Features:
 
-## Démonstration & Screenshots
-
-### 1. Dashboard en mode "Surveillance Normale"
-
-Cette vue montre le flux de données en temps réel. On observe les volumes de posts par marque et une courbe de sentiment stable.
-
-> *courbes évolutifs:*
-![courbes évolutifs](ressources/newplot.png)
-
-### 2. Détection de Crise (Simulation)
-
-Lorsqu'une marque (ex: Maroc Telecom) subit une vague de commentaires négatifs, le système déclenche une alerte visuelle rouge et notifie l'opérateur en moins de 5 secondes.
-
-> *chute de la réputation: courbe en rouge "orange maroc":*
-![chute de réputation](ressources/image.png)
-
-Dashboard en sa totalité:
-
-![dashboard](ressources/image-1.png)
-
-### 3. Preuve de Stockage (Cassandra)
-
-Vue de la base de données montrant les tweets bruts et les scores de sentiment associés, prouvant que le pipeline d'écriture fonctionne.
-
-> ![commande cassandra pour le stockage](ressources/Screenshot%20from%202026-01-08%2014-06-20.png)*
-![alt text](ressources/Screenshot%20from%202026-01-08%2014-28-31.png) 
-![alt text](ressources/Screenshot%20from%202026-01-08%2014-06-33.png)
+- **High-Frequency Ingestion:** Handles traffic spikes and burst loads efficiently
+- **Low Latency:** Crisis detection in < 10 seconds
+- **Real-Time Visualization:** Interactive web dashboard with Streamlit
+- **Complete Storage:** Full historical data and temporal aggregations in Cassandra
 
 ---
 
-## Installation et Démarrage
+## Technical Architecture
 
-### Prérequis
+The data pipeline follows this workflow:
 
-- Docker (pour Kafka et Cassandra)
+1. **Generator (Python):** Simulates realistic social media streams with weighted crisis scenarios
+2. **Ingestion (Apache Kafka):** Buffers messages in `social_posts` topic (3 partitions)
+3. **Stream Processing (Apache Spark Streaming):**
+   - Micro-batch consumption
+   - Data cleaning and Sentiment Analysis (TextBlob)
+   - Sliding window aggregation (1-minute windows)
+4. **Storage (Apache Cassandra):** Persists raw posts and aggregated metrics
+5. **Visualization (Streamlit + Plotly):** Real-time monitoring interface with alert system
+
+---
+
+## Dashboard & Results
+
+### 1. Normal Surveillance Mode
+
+Real-time data flow visualization showing post volumes by brand and stable sentiment curves.
+
+![Sentiment Evolution Curves](ressources/dashboard_normal_mode.png)
+
+### 2. Crisis Detection
+
+When a brand experiences a surge of negative comments, the system triggers visual red alerts and notifies operators within seconds.
+
+![Crisis Detection - Reputation Drop](ressources/dashboard_crisis_mode.png)
+
+### 3. Full Dashboard Overview
+
+Complete dashboard interface showing all monitoring components.
+
+![Complete Dashboard](ressources/dashboard_overview.png)
+
+### 4. Data Storage Verification
+
+Database view showing raw posts and associated sentiment scores, proving the write pipeline functions correctly.
+
+![Cassandra Storage Proof](ressources/cassandra_storage.png)
+
+---
+
+## Installation & Quick Start
+
+### Prerequisites
+
+- Docker (for Kafka and Cassandra)
 - Python 3.10+
-- Java 11 (Requis pour Spark)
+- Java 11 (required for Spark)
 
-### 1. Démarrer l'Infrastructure
+### 1. Start Infrastructure
 
-Assurez-vous que les conteneurs Docker tournent :
+Ensure Docker containers are running:
 
 ```bash
-# Démarrer Cassandra
+# Start Cassandra
 docker run --name cassandra -p 9042:9042 -d cassandra:4.1
 
-# Vérifier Kafka (déjà installé sur votre machine/docker)
-# Créer le topic si nécessaire :
+# Verify Kafka and create topic if needed
 docker exec -it kafka kafka-topics --create --topic social_posts --partitions 3 --bootstrap-server localhost:9092
 ```
 
-### 2. Installer les dépendances Python
+### 2. Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
 python -m textblob.download_corpora
 ```
 
-### 3. Lancer le Pipeline
+### 3. Run the Pipeline
 
-Ouvrez 3 terminaux distincts et lancez les commandes dans cet ordre :
+Open 3 separate terminals and run commands in this order:
 
-#### Terminal 1 : Générateur de Données
-
-```bash
-python3 src/generator/post_generator_v2.py
-```
-
-Le script commencera à envoyer des messages. Une crise aléatoire sera simulée périodiquement.
-
-#### Terminal 2 : Moteur de Traitement (Spark)
+#### Terminal 1: Data Generator
 
 ```bash
-python3 src/processor/spark_processor.py
+python3 src/generator/post_generator.py
 ```
 
-Attendre l'initialisation de la JVM et le message "Streaming started".
+The script will send messages and periodically simulate random crises.
 
-#### Terminal 3 : Dashboard Web
+#### Terminal 2: Stream Processing Engine (Spark)
+
+```bash
+python3 src/processor/processor.py
+```
+
+Wait for JVM initialization and the "Streaming started" message.
+
+#### Terminal 3: Web Dashboard
 
 ```bash
 streamlit run src/dashboard/web_dashboard.py
 ```
 
-Le dashboard s'ouvrira automatiquement dans votre navigateur (http://localhost:8501).
+The dashboard will open automatically in your browser at http://localhost:8501.
 
 ---
 
-## Structure du Projet
+## Project Structure
 
 ```
-sentiment-analysis/
+crooked_version/
 ├── config/
-│   └── cassandra_schema.cql         # Schéma de la base de données
-├── docs/                            # Documentation et images
-├── ressources/                      # Screenshots et images du projet
+│   └── cassandra_schema.cql         # Database schema
+├── docs/                            # Documentation
+├── ressources/                      # Screenshots and images
 ├── src/
 │   ├── generator/
-│   │   └── post_generator.py        # Simulateur de trafic (Normal + Crise)
+│   │   ├── generator2.py            # Data generator module
+│   │   └── post_generator.py        # Traffic simulator (Normal + Crisis)
 │   ├── processor/
-│   │   └── spark_processor.py       # Pipeline ETL Spark Streaming
+│   │   └── processor.py             # Spark Streaming ETL pipeline
 │   └── dashboard/
-│       └── web_dashboard.py         # Interface Web Streamlit
-├── requirements.txt                 # Dépendances Python
-└── system_events.log                # Logs automatiques des crises détectées
+│       ├── dashboard.py             # Dashboard module
+│       ├── dashboard2.py            # Alternative dashboard
+│       └── web_dashboard.py         # Streamlit web interface
+├── requirements.txt                 # Python dependencies
+├── README.md                        # This file
+└── system_events.log                # Automatic crisis event logs
 ```
 
 ---
 
-## Difficultés Rencontrées & Solutions
+## Technology Stack
 
-| Problème | Solution |
-|----------|----------|
-| **Compatibilité Spark/Java:** Spark 3.5 nécessitait Java 11 | Forcer `JAVA_HOME` vers OpenJDK 11 |
-| **Driver Cassandra & Python 3.12:** Erreur de compilation des extensions C | Installation en mode "Pure Python" (`CASSANDRA_DRIVER_NO_EXTENSIONS=1`) |
-| **Kafka Legacy:** La librairie `kafka-python` n'était plus compatible | Remplacée par `kafka-python-ng` |
+| Component | Technology | Version |
+|-----------|-----------|---------|
+| Stream Ingestion | Apache Kafka | 2.x |
+| Stream Processing | Apache Spark | 3.5.0 |
+| Data Storage | Apache Cassandra | 4.1 |
+| Sentiment Analysis | TextBlob | 0.17.1 |
+| Web Framework | Streamlit | Latest |
+| Data Processing | Pandas | 2.1.4 |
+| NLP | NLTK | 3.8.1 |
+
+---
+
+## Challenges & Solutions
+
+| Issue | Solution |
+|-------|----------|
+| **Spark/Java Compatibility:** Spark 3.5 required Java 11 | Set `JAVA_HOME` to OpenJDK 11 |
+| **Cassandra Driver with Python 3.12:** C extension compilation errors | Install in pure Python mode (`CASSANDRA_DRIVER_NO_EXTENSIONS=1`) |
+| **Kafka Legacy Support:** `kafka-python` compatibility issues | Upgraded dependencies for Python 3.10+ support |
+
+---
+
+## Usage Notes
+
+- The generator creates realistic sentiment distributions with weighted crisis scenarios
+- Crises trigger automatically with a 5% probability each cycle
+- Crisis duration lasts approximately 20 seconds before sentiment returns to normal
+- All events are logged to `system_events.log` for audit and analysis
+
+---
+
+## Author
+
+Developed as part of the Big Data Clusters & Distributed Systems module for 2025/2026
