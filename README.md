@@ -36,29 +36,33 @@ Le pipeline de données suit le flux suivant :
 
 ---
 
-## 📸 Démonstration & Screenshots
+## Démonstration & Screenshots
 
 ### 1. Dashboard en mode "Surveillance Normale"
 
 Cette vue montre le flux de données en temps réel. On observe les volumes de posts par marque et une courbe de sentiment stable.
 
-> *(Insérer ici le screenshot du dashboard avec les courbes bleues/vertes)*
+> *courbes évolutifs:*
+![courbes évolutifs](newplot.png)
 
 ### 2. Détection de Crise (Simulation)
 
 Lorsqu'une marque (ex: Maroc Telecom) subit une vague de commentaires négatifs, le système déclenche une alerte visuelle rouge et notifie l'opérateur en moins de 5 secondes.
 
-> *(Insérer ici le screenshot avec la bannière ROUGE "CRITICAL ALERT" et le graphique en chute)*
+> *chute de la réputation: courbe en rouge "orange maroc"*
+![chute de réputation](image.png)
 
 ### 3. Preuve de Stockage (Cassandra)
 
 Vue de la base de données montrant les tweets bruts et les scores de sentiment associés, prouvant que le pipeline d'écriture fonctionne.
 
-> *(Insérer ici le screenshot de votre terminal avec la commande `SELECT * FROM posts LIMIT 10;`)*
+> ![commande cassandra pour le stockage](<Screenshot from 2026-01-08 14-06-20.png>)*
+![alt text](<Screenshot from 2026-01-08 14-28-31.png>) 
+![alt text](<Screenshot from 2026-01-08 14-06-33.png>)
 
 ---
 
-## 🚀 Installation et Démarrage
+## Installation et Démarrage
 
 ### Prérequis
 
