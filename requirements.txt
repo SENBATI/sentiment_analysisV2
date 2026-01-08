@@ -1,0 +1,6 @@
+pyspark==3.5.0
+kafka-python==2.0.2
+cassandra-driver==3.29.0
+textblob==0.17.1
+nltk==3.8.1
+pandas==2.1.4

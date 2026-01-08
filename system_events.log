@@ -1,0 +1,572 @@
+2026-01-08 13:35:01 | WARNING | Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2026-01-08 13:35:01 | WARNING | Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. https://docs.datastax.com/en/developer/python-driver/latest/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2026-01-08 13:35:01 | WARNING | Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. https://docs.datastax.com/en/developer/python-driver/latest/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2026-01-08 13:35:01 | INFO | Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2026-01-08 13:35:01 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:01 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:01 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:01 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:03 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:03 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:03 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:03 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:05 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:05 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:05 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:05 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:07 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:07 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:07 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:07 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:09 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:09 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:09 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:09 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:11 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:11 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:11 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:11 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:14 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:14 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:14 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:14 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:16 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:16 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:16 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:16 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:18 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:18 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:18 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:18 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:20 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:20 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:20 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:20 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:22 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:22 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:22 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:22 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:24 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:24 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:24 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:24 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:26 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:26 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:26 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:26 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:28 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:28 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:28 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:28 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:30 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:30 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:30 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:30 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:33 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:33 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:33 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:33 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:35 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:35 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:35 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:35 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:37 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:37 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:37 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:37 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:39 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:39 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:39 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:39 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:41 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:41 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:41 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:41 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:43 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:43 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:43 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:43 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:45 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:45 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:45 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:45 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:47 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:47 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:47 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:47 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:49 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:49 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:49 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:49 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:52 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:52 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:52 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:52 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:54 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:54 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:54 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:54 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:56 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:56 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:56 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:56 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:35:58 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:35:58 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:35:58 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:35:58 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:00 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:00 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:00 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:00 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:02 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:02 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:02 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:02 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:04 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:04 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:04 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:04 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:06 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:06 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:06 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:06 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:09 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:09 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:09 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:09 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:11 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:11 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:11 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:11 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:13 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:13 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:13 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:13 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:15 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:15 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:15 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:15 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:17 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:17 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:17 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:17 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:19 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:19 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:19 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:19 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:21 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:21 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:21 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:21 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:23 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:23 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:23 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:23 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:25 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:25 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:25 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:25 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:28 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:28 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:28 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:28 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:30 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:30 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:30 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:30 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:32 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:32 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:32 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:32 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:34 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:34 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:34 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:34 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:36 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:36 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:36 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:36 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:38 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:38 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:38 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:38 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:40 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:40 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:40 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:40 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:42 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:42 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:42 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:42 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:44 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:44 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:44 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:44 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:47 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:47 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:47 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:47 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:49 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:49 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:49 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:49 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:51 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:51 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:51 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:51 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:53 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:53 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:53 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:53 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:55 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:55 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:55 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:55 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:57 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:57 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:57 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:57 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:36:59 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:36:59 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:36:59 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:36:59 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:01 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:01 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:01 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:01 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:04 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:04 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:04 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:04 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:06 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:06 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:06 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:06 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:08 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:08 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:08 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:08 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:10 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:10 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:10 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:10 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:12 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:12 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:12 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:12 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:14 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:14 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:14 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:14 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:16 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:16 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:16 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:16 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:18 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:18 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:18 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:18 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:20 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:20 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:20 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:20 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:23 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:23 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:23 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:23 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:25 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:25 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:25 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:25 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:27 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:27 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:27 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:27 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:29 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:29 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:29 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:29 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:31 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:31 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:31 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:31 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:33 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:33 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:33 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:33 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:35 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:35 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:35 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:35 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:37 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:37 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:37 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:37 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:40 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:40 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:40 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:40 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:42 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:42 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:42 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:42 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:44 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:44 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:44 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:44 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:46 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:46 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:46 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:46 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:48 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:48 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:48 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:48 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:50 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:50 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:50 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:50 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:52 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:52 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:52 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:52 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:54 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:54 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:54 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:54 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:56 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:56 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:56 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:56 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:37:59 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:37:59 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:37:59 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:37:59 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:01 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:01 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:01 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:01 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:03 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:03 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:03 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:03 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:05 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:05 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:05 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:05 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:07 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:07 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:07 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:07 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:09 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:09 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:09 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:09 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:11 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:11 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:11 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:11 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:13 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:13 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:13 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:13 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:15 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:15 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:15 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:15 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:18 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:18 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:18 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:18 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:20 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:20 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:20 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:20 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:22 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:22 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:22 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:22 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:24 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:24 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:24 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:24 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:26 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:26 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:26 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:26 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:28 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:28 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:28 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:28 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:30 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:30 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:30 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:30 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:32 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:32 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:32 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:32 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:35 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:35 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:35 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:35 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:37 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:37 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:37 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:37 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:39 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:39 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:39 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:39 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:41 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:41 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:41 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:41 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:43 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:43 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:43 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:43 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:45 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:45 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:45 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:45 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:47 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:47 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:47 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:47 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:49 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:49 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:49 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:49 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:51 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:51 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:51 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:51 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:54 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:54 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:54 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:54 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:56 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:56 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:56 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:56 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:38:58 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:38:58 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:38:58 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:38:58 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:00 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:00 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:00 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:00 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:02 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:02 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:02 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:02 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:04 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:04 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:04 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:04 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:06 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:06 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:06 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:06 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:08 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:08 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:08 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:08 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:10 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:10 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:11 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:11 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:13 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:13 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:13 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:13 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:15 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:15 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:15 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:15 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:17 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:17 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:17 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:17 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:19 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:19 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:19 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:19 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:21 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:21 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:21 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:21 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:23 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:23 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:23 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:23 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:25 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:25 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:25 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:25 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:27 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:27 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:27 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:27 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:30 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:30 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:30 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:30 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:32 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:32 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:32 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:32 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:34 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:34 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:34 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:34 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:36 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:36 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:36 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:36 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:38 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:38 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:38 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:38 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:40 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:40 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:40 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:40 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:42 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:42 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:42 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:42 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:44 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:44 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:44 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:44 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:46 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:46 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:46 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:46 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:49 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:49 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:49 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:49 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:39:51 | WARNING | CRISIS DETECTED - Brand: Orange Maroc | Score: -0.093
+2026-01-08 13:39:51 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:39:51 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:39:51 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:40:04 | WARNING | Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['localhost'], lbp = None)
+2026-01-08 13:40:04 | WARNING | Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. https://docs.datastax.com/en/developer/python-driver/latest/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2026-01-08 13:40:04 | WARNING | Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. https://docs.datastax.com/en/developer/python-driver/latest/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2026-01-08 13:40:04 | INFO | Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2026-01-08 13:40:04 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:40:04 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:40:04 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:40:04 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:40:04 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:40:04 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
+2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Royal Air Maroc | Score: -0.092
+2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Inwi | Score: -0.081
+2026-01-08 13:40:06 | WARNING | CRISIS DETECTED - Brand: Attijariwafa Bank | Score: -0.130
