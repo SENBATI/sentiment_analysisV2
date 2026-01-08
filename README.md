@@ -64,7 +64,6 @@ Dashboard en sa totalité:
 
 Vue de la base de données montrant les tweets bruts et les scores de sentiment associés, prouvant que le pipeline d'écriture fonctionne.
 
-> ![commande cassandra pour le stockage](ressources/Screenshot%20from%202026-01-08%2014-06-20.png)*
 ![alt text](ressources/cassandra1.png) 
 ![alt text](ressources/cassandra2.png)
 ![alt text](ressources/cassandra3.png)
