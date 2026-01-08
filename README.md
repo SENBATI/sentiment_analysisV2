@@ -43,26 +43,26 @@ Le pipeline de données suit le flux suivant :
 Cette vue montre le flux de données en temps réel. On observe les volumes de posts par marque et une courbe de sentiment stable.
 
 > *courbes évolutifs:*
-![courbes évolutifs](newplot.png)
+![courbes évolutifs](ressources/newplot.png)
 
 ### 2. Détection de Crise (Simulation)
 
 Lorsqu'une marque (ex: Maroc Telecom) subit une vague de commentaires négatifs, le système déclenche une alerte visuelle rouge et notifie l'opérateur en moins de 5 secondes.
 
 > *chute de la réputation: courbe en rouge "orange maroc":*
-![chute de réputation](image.png)
+![chute de réputation](ressources/image.png)
 
 Dashboard en sa totalité:
 
-![dashboard](image-1.png)
+![dashboard](ressources/image-1.png)
 
 ### 3. Preuve de Stockage (Cassandra)
 
 Vue de la base de données montrant les tweets bruts et les scores de sentiment associés, prouvant que le pipeline d'écriture fonctionne.
 
-> ![commande cassandra pour le stockage](<Screenshot from 2026-01-08 14-06-20.png>)*
-![alt text](<Screenshot from 2026-01-08 14-28-31.png>) 
-![alt text](<Screenshot from 2026-01-08 14-06-33.png>)
+> ![commande cassandra pour le stockage](ressources/Screenshot%20from%202026-01-08%2014-06-20.png)*
+![alt text](ressources/Screenshot%20from%202026-01-08%2014-28-31.png) 
+![alt text](ressources/Screenshot%20from%202026-01-08%2014-06-33.png)
 
 ---
 
@@ -131,6 +131,7 @@ sentiment-analysis/
 ├── config/
 │   └── cassandra_schema.cql         # Schéma de la base de données
 ├── docs/                            # Documentation et images
+├── ressources/                      # Screenshots et images du projet
 ├── src/
 │   ├── generator/
 │   │   └── post_generator.py        # Simulateur de trafic (Normal + Crise)
